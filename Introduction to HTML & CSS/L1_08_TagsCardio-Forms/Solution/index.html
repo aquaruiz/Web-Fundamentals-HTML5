@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Customer Details</legend>
+		<div>
+			<label for="firstName">First Name</label>
+			<input type="type" name="firstName" id="firstName" placeholder="George" autofocus="true">
+		</div>
+		<div>
+			<label for="lastName">Last Name</label>
+			<input type="type" name="lastName" id="lastName" placeholder="Devis">
+		</div>
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="sex[]" value="male" id="male">
+			<label for="female">Female</label>
+			<input type="radio" name="sex[]" value="female" id="female">
+			<label for="other">Other</label>
+			<input type="radio" name="sex[]" value="other" id="other">
+		</div>
+		<div>
+			Preferred contact method:
+			<label for="emailMethod">Email</label>
+			<input type="radio" name="contactMethod[]" value="email" id="emailMethod">
+			<label for="phoneMethod">Phone</label>
+			<input type="radio" name="contactMethod[]" value="phone" id="phoneMethod">
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="your@email.com">
+		</div>
+		<div>
+			<label for="phone">Phone</label>
+			<input type="text" name="phone" id="phone" placeholder="+359885236225">
+		</div>
+		<div>
+			<label for="town">Town</label>
+			<select name="town" id="town">
+				<option value="varna">Varna</option>
+				<option value="sofia">Sofia</option>
+				<option value="plovdiv">Plovdiv</option>
+			</select>
+		</div>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" min="18" max="70" name="age" id="age">
+		</div>
+		<div>
+			<label for="language">Programming language</label>
+			<input list="languages" name="language" id="language">
+ 			<datalist id="languages">
+			    <option value="java">
+			    <option value="C#">
+			    <option value="PHP">
+			    <option value="JS">
+			    <option value="Python">
+ 			</datalist>
+		</div>
+		<div>
+			<textarea rows="5" cols="20" id="info" name="info" placeholder="More information..."></textarea>
+		</div>
+		<div>
+			<input type="checkbox" checked="checked" name="agreed" id="agreed">
+			<label for="agreed">I agree the Terms and Conditions</label>
+		</div>
+		<div>
+			<input type="submit" name="submit" id="submit" value="Send">
+		</div>
+	</fieldset>
+</form>
+</body>
+</html>
