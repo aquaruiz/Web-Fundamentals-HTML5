@@ -1,0 +1,29 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+body {
+	padding: 2rem;
+}
+
+p {
+	padding: 1.0rem;
+}
+
+a i {
+	padding-right: 0.5em;
+	
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	padding: 0.75em;
+	border-radius: 0.3em;
+}
+p:nth-child(1) a{
+	background-color: green;
+}
+
+
+p:nth-child(2) a{
+	background-color: orange;
+}
